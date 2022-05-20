@@ -1,0 +1,18 @@
+<div class="container col-md-6" style="background-color:aqua" style="background-color:aqua" style="background-image:url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000)">
+    <h2 style="color:darkmagenta" class="text-center">𝘾𝙍𝙀𝘼𝙏𝙀 𝙏𝙀𝘼𝙈 </h2>
+
+<form #loginForm="ngForm" (ngSubmit)="createteam()">
+    <small class="text-danger"></small>    
+    <div class="form-group">
+      <label for="teamname">TeamName:</label>
+      <input type="text" class="form-control" name="teamName" [(ngModel)]="user.teamName">
+    </div>
+    <div class="form-group">
+      <label for="teambudget">Team Budget:</label>
+      <input type="text" class="form-control" name="teamMaximunBudget" [(ngModel)]="user.maximumBudget">
+    </div>
+    <br/>
+    <div class="text-center">
+        <button type="submit"  class="btn btn-primary">Registred</button></div>
+  </form>
+  <div>

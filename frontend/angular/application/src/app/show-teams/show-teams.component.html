@@ -1,0 +1,32 @@
+<h1 class="nav" style="background-color:blueviolet; color:antiquewhite">
+    
+𝙇𝙄𝙎𝙏 𝙊𝙁 𝙏𝙀𝘼𝙈𝙎
+  </h1>
+  
+ 
+
+    <input type="text" placeholder="Search.." name="playerName" >
+    <button type="submit"class="btn btn-primary" >submit</button>
+
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Team ID</th>
+        <th scope="col">Team Name</th>
+        <th scope="col">Team Budget($)</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of teams">
+          <td>{{team.teamId}}</td>
+          <td>{{team.teamName}}</td>
+          <td>{{team.maximumBudget}}</td>
+         
+
+      </tr>
+
+      </tbody>
+      </table>
+      

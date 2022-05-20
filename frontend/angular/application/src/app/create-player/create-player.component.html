@@ -1,0 +1,26 @@
+
+  <div class="container col-md-6" style="background-color:aqua" style="background-color:aqua" style="background-image:url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000)">
+    <h2 style="color:darkmagenta" class="text-center">𝘾𝙍𝙀𝘼𝙏𝙀 𝙋𝙇𝘼𝙔𝙀𝙍 </h2>
+
+<form #loginForm="ngForm" (ngSubmit)="createplayer()">
+    <small class="text-danger"></small>    
+    <div class="form-group">
+      <label for="teamname">Create Player:</label>
+      <input type="text" class="form-control" name="playerName" [(ngModel)]="user1.playerName"   ngModel  #name="ngModel" required [class.is-invalid]="name.invalid && name.touched">
+      <span class="text-danger" [class.d-none]="name.valid || name.touched">UserName is required</span>
+    <span *ngIf="name.invalid && name.touched" style="color:red">username should contain 4 to 15 characters</span>
+    </div>
+    <div class="form-group">
+      <label for="teambudget">Player Budget:</label>
+      <input type="text" class="form-control" name="playerbiddingBudget" [(ngModel)]="user1.bindingBudget">
+    </div>
+    <div class="form-group">
+      <label for="teambudget">Team Name:</label>
+      <input type="text" class="form-control" name="teamname" [(ngModel)]="user1.teamName">
+    </div>
+    
+    <br/>
+    <div class="text-center">
+        <button type="submit"  class="btn btn-primary">Registred</button></div>
+  </form>
+  <div>

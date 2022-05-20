@@ -1,0 +1,35 @@
+<h1 class="nav" style="background-color:blueviolet; color:antiquewhite">
+  𝙇𝙄𝙎𝙏 𝙊𝙁 𝙋𝙇𝘼𝙔𝙀𝙍𝙎 
+  </h1>
+  
+    
+  <form #form = ngForm (ngSubmit)="showPlayer()">
+    <input type="text" placeholder="Search.."name="name" [(ngModel)]="players.playerName" >{{players.playerName}}
+
+    <button type="submit" class="btn btn-info" >Show Player</button>
+
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Player ID</th>
+        <th scope="col">Player Name</th>
+        <th scope="col"> Team Name</th>
+        <th scope="col">Player Budget($)</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players  ">
+          <td>{{player. playerId}}</td>
+          <td>{{player. playerName}}</td>
+          <td>{{player. teamName}}</td>
+          <td>{{player.  bindingBudget}}</td>
+
+      </tr>
+
+      </tbody>
+      </table>
+  </form>
+      
+      
+    
